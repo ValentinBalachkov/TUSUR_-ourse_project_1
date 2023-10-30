@@ -1,18 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Config : MonoBehaviour
+[CreateAssetMenu(fileName = "Config", menuName = "Data/Config", order = 1)]
+public class Config : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] private int _maxWordLenght;
+    
 }
