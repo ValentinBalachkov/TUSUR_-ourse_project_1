@@ -38,6 +38,11 @@ public class GameInterfacePanel : AbstractPanel
     private void SetWord()
     {
         var words = _wordController.GetCorrectWords(_inputField.text);
+
+        if (words == null)
+        {
+            return;
+        }
        
         foreach (var word in words)
         {
