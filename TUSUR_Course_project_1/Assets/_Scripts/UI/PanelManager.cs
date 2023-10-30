@@ -30,6 +30,7 @@ public class PanelManager : MonoBehaviour
         {
             var panelType = _panels.FirstOrDefault(x => x is T);
             var panel = Instantiate(panelType, _content);
+            panel.Init(this);
             _panelsOnScene.Add(panel);
             _currentPanel = panel;
             _currentPanel.Open();

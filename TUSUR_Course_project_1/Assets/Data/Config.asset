@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Config
   m_EditorClassIdentifier: 
   _maxWordLenght: 18
+  _minWordsCount: 2
