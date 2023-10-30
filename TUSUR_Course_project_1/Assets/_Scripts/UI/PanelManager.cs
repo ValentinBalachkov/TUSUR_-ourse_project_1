@@ -35,6 +35,11 @@ public class PanelManager : MonoBehaviour
             _currentPanel.Open();
         }
     }
+
+    public T GetPanel<T>() where T : AbstractPanel
+    {
+        return (T)_panelsOnScene.FirstOrDefault(x => x is T);
+    }
     
     
 }
